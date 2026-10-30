@@ -144,12 +144,18 @@ Mit 15 Filialen über 365 Tage:
 
 | Kennzahl | Wert |
 |---|---|
-| Gesamtumsatz | ₹28.4 Cr |
-| Geschuldete Royalties | ₹170 L |
-| Royalty-Lücke erkannt | ₹18 L |
-| Erkannte Anomalien | 47 |
-| Davon HIGH priority | 12 |
-| Doppelte Rechnungen | 8 |
+| Gesamtumsatz | ₹23.46 Cr |
+| Geschuldete Royalties | ₹144.6 L |
+| Royalty-Lücke erkannt | ₹4.2 L |
+| Unterbezahlte Rechnungen | 10 |
+| Erkannte Anomalien | 6 (alle HIGH) |
+| Doppelte Rechnungen | 4 von 4 erkannt |
+
+*Ergebnis von `python data/data_generator.py && python pipeline/run_pipeline.py` (Seed 42).
+Doppelte Rechnungen werden jetzt am Inhalt erkannt (gleiche Filiale, Monat, Umsatz und Royalty),
+nicht über die Ground-Truth-Spalte des Generators. Im Standardlauf lösen nur Duplikate und der
+Isolation Forest aus; die Regel-Detektoren arbeiten auf Filialebene und reagieren auf die selten
+injizierten Tagesanomalien kaum.*
 
 ---
 
