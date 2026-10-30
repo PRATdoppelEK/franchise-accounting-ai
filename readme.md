@@ -5,6 +5,10 @@
 
 ---
 
+> **📌 About this repo:** This is a showcase repo — write-up, architecture, and results only. The full implementation lives in a private core repo (kept private to protect the code and as a backup) and is available for a live walkthrough on request, e.g. in an interview.
+
+---
+
 ## 🎯 Was dieses Projekt macht
 
 Ein KI-System für Franchise-Netzwerke, das:
@@ -164,7 +168,8 @@ Unterzahlung-Alert: wenn bezahlt < fällig × 95%
 ## 🔒 Datenschutz & Compliance
 
 - Alle Berechnungen lokal — keine Cloud-API-Aufrufe
-- DPDP Act 2023 (Indien) konform
+- Mit Blick auf den DPDP Act 2023 (Indien) ausgelegt — keine rechtliche Konformitätsprüfung
+- Alle Daten in diesem Repo sind synthetisch
 - Echte Rechnungsdokumente können verschlüsselt gespeichert werden
 
 ---
